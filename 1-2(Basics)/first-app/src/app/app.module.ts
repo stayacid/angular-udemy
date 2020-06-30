@@ -4,7 +4,8 @@ import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { FormsModule } from '@angular/forms';
-import { UserComponent } from './user/user.component'; // enable ngModel
+import { UserComponent } from './user/user.component';
+import { DetailsComponent } from './details/details.component'; // enable ngModel
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { UserComponent } from './user/user.component'; // enable ngModel
     ServerComponent,
     ServersComponent,
     UserComponent,
+    DetailsComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

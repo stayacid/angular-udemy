@@ -1,5 +1,5 @@
 <div class="container my-4">
-  <div class="row">
+  <div class="row mb-4">
     <div class="col-6">
       <h3>Servers</h3>
       <hr />
@@ -11,6 +11,15 @@
       <h3>User</h3>
       <hr />
       <app-user></app-user>
+      <!-- or <div app-servers> or <div class="app-servers"> but change selector in servers.component.ts to '[app-servers]'-->
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+      <h3>Details</h3>
+      <hr />
+      <app-details></app-details>
       <!-- or <div app-servers> or <div class="app-servers"> but change selector in servers.component.ts to '[app-servers]'-->
     </div>
   </div>
