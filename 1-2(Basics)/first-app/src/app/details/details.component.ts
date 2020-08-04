@@ -18,4 +18,8 @@ export class DetailsComponent implements OnInit {
     this.show = !this.show;
     this.clickedLog.push(++this.clicked);
   }
+
+  getColor() {
+    
+  }
 }

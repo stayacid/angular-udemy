@@ -2,4 +2,14 @@
   Display Details
 </button>
 <p *ngIf="show">Secret password = 'tuna'</p>
-<p>Clicked: {{ clickedLog }}</p>
+<div>
+  Clicked:
+  <span
+    *ngFor="let log of clickedLog; let i = index"
+    [ngStyle]="{ color: log >= 5 ? 'white' : 'black' }"
+    [ngClass]="{ blue: log >= 5 }"
+  >
+    {{ log }}
+  </span>
+  <span> times</span>
+</div>
